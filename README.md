@@ -1,8 +1,10 @@
 # SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
+## Name: Renick Fabian Rajesh
+## Reg No: 212224230227
 
 **AIM:**
 
-To implement  SISO Shift Register using verilog and validating their functionality using their functional tables
+To implement  SISO Shift Register using verilog and validating their functionality using their functional tables.
 
 **SOFTWARE REQUIRED:**
 
@@ -25,39 +27,44 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 **Procedure**
 
-    1.Initialize the shift register to a known state (e.g., all zeros).
-    2.Input a bit serially into the shift register.
-    3.Shift the contents of the register one position to the right (or left).
-    4.Output the shifted bit from the last stage of the register.
-    5.Repeat steps 2-4 for each bit you want to input and shift
-    
+1.Type the program in Quartus software.
+2.Compile and run the program.
+3.Generate the RTL schematic and save the logic diagram.
+4.Create nodes for inputs and outputs to generate the timing diagram.
+5.For different input combinations generate the timing diagram.
+
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+ Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-       module Verilog1(clk, sin, q);
-       input clk;
-       input sin;
-       output [3:0] q;
-       reg [3:0] q;
-       always @(posedge clk)
-       begin
-       q[0] <= sin;
-       q[1] <= q[0];
-       q[2] <= q[1];
-       q[3] <= q[2];
-       end
-       endmodule
+```
+module exp10(clk, sin, q);
+input clk;
+input sin;
+output [3:0] q;
+reg [3:0] q;
+always @(posedge clk)
+begin
+q[0] <= sin;
+q[1] <= q[0];
+q[2] <= q[1];
+q[3] <= q[2];
+end
+endmodule
+```
+Developed by: Renick Fabian Rajesh
 
-Developed by: RegisterNumber:
+RegisterNumber:212224230227
 
-*/
 
 **RTL LOGIC FOR SISO Shift Register**
-![image](https://github.com/user-attachments/assets/ef0ddcc6-2c3f-47fe-a05a-6972fcb040fb)
+![Screenshot 2024-12-24 101839](https://github.com/user-attachments/assets/d895248c-5fc8-4e7e-bfeb-2fe6c567d786)
+
 
 **TIMING DIGRAMS FOR SISO Shift Register**
-![image](https://github.com/user-attachments/assets/31f79ecd-e9fa-411a-9bf1-532f15b909aa)
+![Screenshot 2024-12-24 101915](https://github.com/user-attachments/assets/781c0592-af85-4939-8f9f-306cbd01d42c)
+
 
 **RESULTS**
-Thus the SISO Shift Register is implemented using verilog and validated their functionality using their functional tables
+
+Successfully implemented SISO Shift Register using verilog and validated their functionality using their functional tables.
